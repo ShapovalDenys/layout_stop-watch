@@ -1,0 +1,48 @@
+body {
+  margin: 0; }
+
+.box__watch {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 300px; }
+
+.second_hand {
+  position: absolute;
+  width: 10px;
+  height: 250px;
+  background-color: red;
+  border-radius: 5px;
+  -webkit-animation: rotate 60s;
+          animation: rotate 60s;
+  transform-origin: top;
+  transform: rotate(180deg); }
+
+.minute_hand {
+  position: absolute;
+  width: 10px;
+  height: 150px;
+  background-color: black;
+  border-radius: 5px;
+  -webkit-animation: rotate 360s;
+          animation: rotate 360s;
+  transform-origin: top;
+  transform: rotate(180deg); }
+
+.center_hand {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: black;
+  transform: translate(0, -15px); }
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotateZ(360deg); } }
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg); } }
+
+/*# sourceMappingURL=main.css.map */
